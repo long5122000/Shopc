@@ -42,3 +42,11 @@ ul {
 .main {
   overflow: hidden;
 }
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #413e3e;
+}
+::-webkit-scrollbar-thumb {
+  background: #272525;
+  border-radius: 0.5rem;
+}

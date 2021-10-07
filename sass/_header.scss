@@ -39,33 +39,34 @@
       z-index: var(--z-fixed);
       border-radius: 0 0 1.5rem 1.5rem;
     }
-    &__img {
-      width: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    &__close {
-      font-size: 1.8rem;
-      position: absolute;
-      top: 0.5rem;
-      right: 0.7rem;
-      cursor: pointer;
-    }
-    &__list {
-      @include flex(center, flex-start, nowrap, column);
-      row-gap: 1.5rem;
-    }
-    &__link {
-      text-transform: uppercase;
-      font-weight: var(--font-black);
-      transition: 0.4;
-      &:hover {
-        color: var(--text-color);
-      }
+  }
+  &__img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__close {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.7rem;
+    cursor: pointer;
+  }
+  &__list {
+    @include flex(center, flex-start, nowrap, column);
+    row-gap: 1.5rem;
+  }
+  &__link {
+    text-transform: uppercase;
+    font-weight: var(--font-black);
+    transition: 0.4;
+    &:hover {
+      color: var(--text-color);
     }
   }
 }
+
 .show-menu {
   top: 0;
 }
