@@ -78,10 +78,10 @@ window.addEventListener('scroll' , scrollUp)
 const sr = ScrollReveal({
     originP:'top',
     distance: '60px',
-    duration: 1500,
+    duration: 2000,
     delay:400,
 })
-sr.reveal('.hone-swiper, .new-swiper, .newsletter__container')
-sr.reveal('.category__data, .trick__content, .footer__content', {interval:100})
+sr.reveal('.hone-swiper')
+sr.reveal('.category__data, .trick__content', {interval:100})
 sr.reveal('.about__data, .discount__img', {origin: 'left'})
 sr.reveal('.about__image', {origin:'right'})

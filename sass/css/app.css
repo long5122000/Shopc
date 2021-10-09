@@ -362,7 +362,7 @@ ul {
   opacity: 1;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullets {
   margin: 0 0.5rem;
 }
 
@@ -832,7 +832,7 @@ ul {
     top: 0;
     height: 75px;
   }
-  .home__details-img {
+  .home__indicator__details-img {
     bottom: 0;
     right: 58%;
   }
