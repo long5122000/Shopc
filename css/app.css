@@ -10,13 +10,13 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: linear-gradient(
     90deg,
-    hsl(104, 28%, 40%) 0%,
-    hsl(58, 28%, 40%) 100%
+    hsl(120, 2%, 16%) 0%,
+    hsl(0, 0%, 15%) 100%
   );
   --container-color: linear-gradient(
     90deg,
-    hsl(104, 28%, 35%) 0%,
-    hsl(58, 28%, 35%) 100%
+    hsl(120, 1%, 30%) 0%,
+    hsl(60, 1%, 32%) 100%
   );
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
@@ -137,7 +137,7 @@ ul {
 }
 
 .container {
-  max-width: 968px;
+  max-width: 1240px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -481,6 +481,7 @@ ul {
 }
 .new__image {
   width: 120px;
+  height: 120px;
   transition: 0.3s;
   margin: 0 auto;
   margin-bottom: var(--mb-0-5);
@@ -751,6 +752,9 @@ ul {
     grid-template-columns: repeat(3, 200px);
     justify-content: center;
   }
+  .category__image {
+    height: 200px;
+  }
 
   .about__container {
     grid-template-columns: repeat(2, 1fr);
@@ -760,7 +764,7 @@ ul {
     text-align: initial;
   }
   .about__image {
-    width: 250px;
+    width: 350px;
   }
 
   .trick__container {
@@ -787,6 +791,11 @@ ul {
 
   .newsletter__container {
     grid-template-columns: 0.5fr;
+  }
+
+  .new__image {
+    height: 150px;
+    width: 150px;
   }
 
   .footer__container {
@@ -849,13 +858,14 @@ ul {
   }
   .category__image {
     width: 200px;
+    margin-bottom: 20px;
   }
 
   .about__container {
     column-gap: 7rem;
   }
   .about__image {
-    width: 350px;
+    width: 450px;
   }
   .about__description {
     padding-right: 2rem;
@@ -885,6 +895,7 @@ ul {
   }
   .new__image {
     width: 150px;
+    height: 150px;
   }
   .new__image, .new__subtitle {
     margin-bottom: var(--mb-1);
@@ -904,6 +915,11 @@ ul {
 
   .swiper-pagination {
     margin-top: var(--mb-2-5);
+  }
+
+  .new__image {
+    width: 150px;
+    height: 150px;
   }
 
   .footer__image-one {

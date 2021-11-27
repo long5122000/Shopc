@@ -1,0 +1,31 @@
+.category {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+  }
+  &__data {
+    text-align: center;
+  }
+  &__image {
+    width: 120px;
+    margin: 0 auto;
+    transition: 0.3s;
+    height: 150px;
+    background-size: cover;
+  }
+  &__title {
+    margin-bottom: var(--mb-0-25);
+  }
+  &__data:hover {
+    .category {
+      &__image {
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+}
+.scroll {
+  &-header {
+    background: var(--container-color);
+  }
+}
