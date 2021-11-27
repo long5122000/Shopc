@@ -3,11 +3,10 @@
 @import "mixin";
 @import "base";
 @import "header";
-@import "cart";
-@import "home";
+@import "cart" @import "home";
 @import "category";
 @import "about";
-@import "hot";
+@import "trick";
 @import "discount";
 @import "new";
 @import "newsletter";

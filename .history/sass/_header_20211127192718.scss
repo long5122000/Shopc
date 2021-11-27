@@ -65,14 +65,9 @@
       color: var(--text-color);
     }
   }
-  &__btns {
-    display: flex;
-    font-size: var(--h2-font-size);
-    gap: 0 20px;
-  }
-  &__shop {
-    font-size: 1.25rem;
-    cursor: pointer;
+  &__card,
+  &__user {
+    font-size: 2rem;
   }
 }
 

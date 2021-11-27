@@ -14,7 +14,7 @@
     }
   }
   .category,
-  .hot {
+  .trick {
     &__container {
       grid-template-columns: 0.8fr;
       justify-content: center;
@@ -106,7 +106,7 @@
       width: 350px;
     }
   }
-  .hot {
+  .trick {
     &__container {
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
@@ -225,7 +225,7 @@
       padding-right: 2rem;
     }
   }
-  .hot {
+  .trick {
     &__container {
       gap: 3.5rem;
     }
