@@ -1,0 +1,59 @@
+.hot {
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  &__content {
+    position: relative;
+    background: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    overflow: hidden;
+
+    &:hover .hot__image {
+      transform: translateY(-0.5rem);
+    }
+    &:hover .hot__button {
+      right: 0;
+    }
+  }
+  &__image {
+    width: 90px;
+    transition: 0.3s;
+    margin: 0 auto;
+  }
+  &__subtitle,
+  &__price {
+    display: block;
+  }
+  &__subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-5);
+  }
+  &__title,
+  &__price {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 0;
+  }
+  &__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    &--bt {
+      border-bottom: 1px solid gray;
+      padding-bottom: 5px;
+    }
+  }
+}

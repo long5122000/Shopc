@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--container-color);
+  transition: var(--transition250);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+    margin-top: var(--mb-2-5);
+  }
+  &__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
+  }
+  &__desc {
+    margin-bottom: var(--mb-1-5);
+  }
+  &__price {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1-5);
+  }
+  &__button {
+    text-align: center;
+  }
+  &__close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 2.5rem;
+  }
+}
+.show-modal {
+  opacity: 1;
+  visibility: unset;
+}

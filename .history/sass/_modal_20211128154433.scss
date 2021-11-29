@@ -1,0 +1,7 @@
+.modal {
+  &__container {
+    @include center();
+    height: 100vh;
+    background: $light2;
+  }
+}

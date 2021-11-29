@@ -1,0 +1,19 @@
+.modal {
+  background-color: #fff;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  &-view {
+    background-color: rgb(88, 86, 86);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+  }
+}

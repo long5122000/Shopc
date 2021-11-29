@@ -1,0 +1,20 @@
+.modal {
+  @include center();
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: var(--transition250);
+  opacity: 1;
+  // visibility: hidden;
+  z-index: 100;
+  &__image {
+    height: 100%;
+    width: 100%;
+    img {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

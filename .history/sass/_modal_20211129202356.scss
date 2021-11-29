@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: var(--transition250);
+  opacity: 1;
+  // visibility: hidden;
+  z-index: 100;
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+    margin-top: var(--mb-2);
+  }
+  &__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
+  }
+  &__desc {
+    margin-bottom: var(--mb-1-5);
+  }
+  &__price {
+    font-size: var(--h2-font-size);
+  }
+}

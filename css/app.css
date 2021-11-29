@@ -4,21 +4,23 @@
   /* Colors */
   --hue: 14;
   --first-color: hsl(var(--hue), 91%, 54%);
-  --first-color-alt: hsl(var(--hue), 91%, 50%);
-  --title-color: hsl(var(--hue), 4%, 100%);
-  --text-color: hsl(var(--hue), 4%, 85%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: linear-gradient(
-    90deg,
-    hsl(120, 2%, 16%) 0%,
-    hsl(0, 0%, 15%) 100%
-  );
-  --container-color: linear-gradient(
-    90deg,
-    hsl(120, 1%, 30%) 0%,
-    hsl(60, 1%, 32%) 100%
-  );
+  --menu-color: hsl(31, 76%, 74%);
+  --button-color: hsl(0, 0%, 24%);
+  --button-color-alt: hsl(0, 0%, 28%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: hsl(0, 0%, 12%);
+  --container-color: hsl(0, 0%, 16%);
+  --border-color: hsl(0, 0%, 20%);
   --border-color: hsl(0, 0%, 94%);
+  --dark1: #3e363f;
+  --dark2: #212527;
+  --light1: #fffce8;
+  --light2: #edf7f6;
+  --red: #df4747;
+  --green: #47df5b;
+  --transition250: all 250ms ease-in-out;
+  --transition500: all 500ms ease-in-out;
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
@@ -311,6 +313,7 @@ ul {
   right: -100%;
   padding: 3.5rem 2rem;
   transition: 0.4s;
+  overflow-y: scroll;
 }
 .cart__title-center {
   font-size: var(--h2-font-size);
@@ -337,7 +340,7 @@ ul {
 .cart__box {
   background-color: var(--container-color);
   padding: 0.75rem 1.25rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid #5c5c5c;
 }
 .cart__img {
   width: 50px;
@@ -349,7 +352,7 @@ ul {
 .cart__price {
   display: block;
   font-size: var(--small-font-size);
-  color: var(--first-color);
+  color: var(--menu-color);
   margin-bottom: var(--mb-1-5);
 }
 .cart__amount, .cart__amount-content {
@@ -371,7 +374,7 @@ ul {
 }
 .cart__amount-trash {
   font-size: 1.15rem;
-  color: var(--first-color);
+  color: var(--menu-color);
   cursor: pointer;
 }
 .cart__prices {
@@ -388,6 +391,9 @@ ul {
 .cart__prices-total {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+}
+.cart::-webkit-scrollbar {
+  display: none;
 }
 
 /* Show cart */
@@ -551,7 +557,9 @@ ul {
   font-size: var(--normal-font-size);
 }
 .hot__button {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
   padding: 0.5rem;
   border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
   position: absolute;
@@ -561,6 +569,13 @@ ul {
 .hot__icon {
   font-size: 1.25rem;
   color: var(--title-color);
+}
+.hot__icon--bt {
+  border-bottom: 1px solid gray;
+  padding-bottom: 4px;
+}
+.hot__icon:hover {
+  color: var(--first-color);
 }
 
 .discount__container {
@@ -641,7 +656,9 @@ ul {
   font-weight: var(--font-medium);
 }
 .new__button {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
   padding: 0.5rem;
   border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
   position: absolute;
@@ -650,6 +667,14 @@ ul {
 }
 .new__icon {
   font-size: 1.25rem;
+  color: var(--title-color);
+}
+.new__icon--bt {
+  border-bottom: 1px solid gray;
+  padding-bottom: 4px;
+}
+.new__icon:hover {
+  color: var(--first-color);
 }
 
 .newsletter__description {
@@ -755,9 +780,59 @@ ul {
   margin-top: 4.5rem;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--container-color);
+  transition: var(--transition250);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.modal__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 10px;
+}
+.modal__image {
+  height: 100%;
+  width: 100%;
+  margin-top: var(--mb-2-5);
+}
+.modal__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-1-5);
+}
+.modal__desc {
+  margin-bottom: var(--mb-1-5);
+}
+.modal__price {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1-5);
+}
+.modal__button {
+  text-align: center;
+}
+.modal__close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 2.5rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: unset;
+}
+
 .scrollup {
   position: fixed;
-  background: var(--container-color);
+  background: var(--first-color);
   right: 1rem;
   bottom: -20%;
   display: inline-flex;
@@ -917,6 +992,10 @@ ul {
     right: initial;
     bottom: 0;
     left: 15%;
+  }
+
+  .modal__image {
+    padding: 0 50px;
   }
 }
 @media screen and (min-width: 992px) {

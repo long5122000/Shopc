@@ -1,0 +1,79 @@
+.modal {
+  &__container {
+    @include center();
+    height: 100vh;
+    background: var(--light2);
+  }
+  @include center();
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: var(--transition250);
+  opacity: 0;
+  visibility: hidden;
+
+  &--bg {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &__content {
+    position: absolute;
+    @include center();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 540px;
+    max-width: 960px;
+    background-color: var(--light2);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: var(--transition250);
+
+    &--show {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: var(--dark2);
+    cursor: pointer;
+    transition: var(--transition250);
+    z-index: 3;
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+
+  &__left,
+  &__right {
+    @include center();
+    padding: 20px;
+  }
+}
+
+.detail {
+  &__title,
+  &__description {
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+}

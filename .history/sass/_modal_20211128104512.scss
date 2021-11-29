@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 3%;
+  left: 0%;
+  background-color: rgb(59, 59, 59);
+  z-index: 100;
+  display: flex;
+  &__image {
+    margin-top: 30px;
+  }
+  &__title {
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-2);
+    font-size: var(--h1-font-size);
+    text-align: center;
+  }
+  &__price {
+    display: block;
+    font-size: var(--h3-font-size);
+    color: var(--menu-color);
+    margin-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1-5);
+  }
+  &__btn {
+    margin-bottom: var(--mb-2);
+  }
+  &__close {
+    font-size: 2rem;
+    color: var(--title-color);
+    position: absolute;
+    top: 0;
+    right: 0.9rem;
+    cursor: pointer;
+  }
+}

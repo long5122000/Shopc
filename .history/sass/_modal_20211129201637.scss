@@ -1,0 +1,21 @@
+.modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: var(--transition250);
+  opacity: 1;
+  // visibility: hidden;
+  z-index: 100;
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+  &__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+  }
+}

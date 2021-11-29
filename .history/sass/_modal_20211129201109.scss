@@ -1,0 +1,12 @@
+.modal {
+  @include center();
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: var(--transition250);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
