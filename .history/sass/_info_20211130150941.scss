@@ -1,0 +1,23 @@
+.info {
+  position: fixed;
+  background-color: rgb(59, 59, 59);
+  z-index: var(--z-fixed);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  padding: 5.5rem 1rem;
+  transition: 0.4s;
+  overflow-y: scroll;
+  &__close {
+    font-size: 2rem;
+    color: var(--title-color);
+    position: absolute;
+    top: 1.25rem;
+    right: 0.9rem;
+    cursor: pointer;
+  }
+}
+.show-info {
+  right: 0;
+}

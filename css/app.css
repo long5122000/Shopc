@@ -401,6 +401,31 @@ ul {
   right: 0;
 }
 
+.info {
+  position: fixed;
+  background-color: #3b3b3b;
+  z-index: var(--z-fixed);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  padding: 5.5rem 1rem;
+  transition: 0.4s;
+  overflow-y: scroll;
+}
+.info__close {
+  font-size: 2rem;
+  color: var(--title-color);
+  position: absolute;
+  top: 1.25rem;
+  right: 0.9rem;
+  cursor: pointer;
+}
+
+.show-info {
+  right: 0;
+}
+
 .home__content {
   row-gap: 1rem;
 }
@@ -924,7 +949,8 @@ ul {
     font-weight: initial;
   }
 
-  .cart {
+  .info,
+.cart {
     width: 420px;
     box-shadow: -2px 0 4px rgba(38, 38, 38, 0.1);
   }

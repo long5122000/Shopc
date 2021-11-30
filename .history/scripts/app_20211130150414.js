@@ -138,8 +138,8 @@ if(infoUser){
 
 /*===== CART HIDDEN =====*/
 /* Validate if constant exists */
-if(infoClose){
-    infoClose.addEventListener('click', () =>{
-        infoShow.classList.remove('show-info')
+if(cartClose){
+    cartClose.addEventListener('click', () =>{
+        cart.classList.remove('show-cart')
     })
 }

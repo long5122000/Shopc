@@ -139,7 +139,7 @@ if(infoUser){
 /*===== CART HIDDEN =====*/
 /* Validate if constant exists */
 if(infoClose){
-    infoClose.addEventListener('click', () =>{
+    infoUser.addEventListener('click', () =>{
         infoShow.classList.remove('show-info')
     })
 }
