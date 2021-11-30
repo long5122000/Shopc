@@ -107,22 +107,6 @@ if(cartClose){
     })
 }
 
-const infoUser = document.getElementById('info-user'),
-      infoShow = document.getElementById('info'),
-      infoClose = document.getElementById('info-close')
-if(infoUser){
-    infoUser.addEventListener('click', () =>{
-        infoShow.classList.add('show-info')
-    })
-}
-
-/*===== CART HIDDEN =====*/
-/* Validate if constant exists */
-if(infoClose){
-    infoClose.addEventListener('click', () =>{
-        infoShow.classList.remove('show-info')
-    })
-}
 /*=== Modal === */
 
 const btnView = document.querySelectorAll('.product__list');
@@ -140,8 +124,22 @@ function modalCloses(){
 }
 modalClose.addEventListener('click',modalCloses)
 
-
+const infoUser = document.getElementById('info-user'),
+      infoShow = document.getElementById('info'),
+      infoClose = document.getElementById('info-close')
 
 /*===== CART SHOW =====*/
 /* Validate if constant exists */
+if(infoUser){
+    infoUser.addEventListener('click', () =>{
+        infoShow.classList.add('show-info')
+    })
+}
 
+/*===== CART HIDDEN =====*/
+/* Validate if constant exists */
+if(infoClose){
+    infoClose.addEventListener('click', () =>{
+        infoShow.classList.remove('show-info')
+    })
+}
