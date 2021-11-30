@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopDD</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <img src="./images/logo-3.png" alt="" class="nav__logo-img" />
+          ShopDD
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+
+            <!-- <a href="" class="button button--ghost">Support</a> -->
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <!-- <img src="./images/nav-img.png" alt="" class="nav__img" /> -->
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+
+          <div class="nav__shop" id="cart-shop">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+
+          <div class="nav__shop" id="info-user">
+            <i class="bx bx-user"></i>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">My Cart</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-1.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Jazzmaster</h3>
+            <span class="cart__price">$1050</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-3.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Rose Gold</h3>
+            <span class="cart__price">$850</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-6.webp" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 items</span>
+        <span class="cart__prices-total">$2880</span>
+      </div>
+    </div>
+
+    <div class="info" id="info">
+      <i class="bx bx-x info__close" id="info-close"></i>
+      <div class="info__btn">
+        <a href="./login.html" class="button">Đăng nhập</a>
+        <a href="./register.html" class="button">Đăng Ký</a>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section about" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">Về chúng tôi <br /></h2>
+            <p class="about__description">
+              Một đơn vị cung cấp những thiết bị điện tử số một đất nước. Với 25
+              năm kinh nghiệm trong lĩnh vực buôn bán. Chúng tôi hiểu bạn, hiểu
+              nhu cầu của bạn. Từ đó chúng tôi sẽ mang lại những điều tốt nhất
+              cho bạn. Một đơn vị cung cấp những thiết bị điện tử số một đất
+              nước. Với 25 năm kinh nghiệm trong lĩnh vực buôn bán. Chúng tôi
+              hiểu bạn, hiểu nhu cầu của bạn. Từ đó chúng tôi sẽ mang lại những
+              điều tốt nhất cho bạn. Một đơn vị cung cấp những thiết bị điện tử
+              số một đất nước. Với 25 năm kinh nghiệm trong lĩnh vực buôn bán.
+              Chúng tôi hiểu bạn, hiểu nhu cầu của bạn. Từ đó chúng tôi sẽ mang
+              lại những điều tốt nhất cho bạn. Một đơn vị cung cấp những thiết
+              bị điện tử số một đất nước. Với 25 năm kinh nghiệm trong lĩnh vực
+              buôn bán. Chúng tôi hiểu bạn, hiểu nhu cầu của bạn. Từ đó chúng
+              tôi sẽ mang lại những điều tốt nhất cho bạn.
+            </p>
+          </div>
+          <img src="./images/about.png" alt="" class="about__image" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="./images/logo-3.png" alt="" class="footer__logo-image" />
+            ShopDD
+          </a>
+          <p class="footer__description">
+            Dịch vụ, sản phẩm tốt nhất dành cho bạn
+          </p>
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Về Chúng Tôi</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Features</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Dịch Vụ</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">Pricing</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Discounts</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Shipping mode</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Công Ty</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">Blog</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">About us</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Our mision</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; Long Lương. All rigths reserved</span>
+
+      <!-- <img src="./images/footer1-img.png" alt="" class="footer__image-one" />
+      <img src="./images/footer2-img.png" alt="" class="footer__image-two" /> -->
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/scrollreveal.min.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
