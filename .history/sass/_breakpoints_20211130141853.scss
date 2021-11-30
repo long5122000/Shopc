@@ -338,9 +338,6 @@
   .modal {
     &__main {
       grid-template-columns: 1fr 1fr;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
     }
     &__image {
       padding: 0 50px;

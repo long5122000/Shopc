@@ -165,14 +165,13 @@
     }
   }
   .modal {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
+    height: 70%;
+    position: absolute;
 
-    &__main {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
     &__image {
       padding: 0 50px;
       img {
@@ -293,18 +292,6 @@
       margin-top: 6rem;
     }
   }
-  .modal {
-    &__main {
-      grid-template-columns: 1fr 1fr;
-    }
-    &__image {
-      padding: 0 50px;
-      img {
-        height: 300px;
-        transform: unset;
-      }
-    }
-  }
 }
 @include minw(1200px) {
   .home {
@@ -332,21 +319,6 @@
         width: 180px;
         top: 30%;
         left: -3%;
-      }
-    }
-  }
-  .modal {
-    &__main {
-      grid-template-columns: 1fr 1fr;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &__image {
-      padding: 0 50px;
-      img {
-        height: 300px;
-        transform: unset;
       }
     }
   }

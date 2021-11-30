@@ -336,11 +336,11 @@
     }
   }
   .modal {
+    transform: translate(35%, 60%);
+    height: 50%;
+    width: 60%;
     &__main {
       grid-template-columns: 1fr 1fr;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
     }
     &__image {
       padding: 0 50px;
