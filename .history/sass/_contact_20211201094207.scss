@@ -1,0 +1,10 @@
+.contact {
+  margin-top: var(--mb-2);
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    font-size: 20px;
+  }
+}

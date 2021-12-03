@@ -1,0 +1,393 @@
+@include maxw(320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .home {
+    &__image {
+      height: 200px;
+    }
+    &__buttons {
+      flex-direction: column;
+      width: max-content;
+      row-gap: 1rem;
+    }
+  }
+  .category,
+  .hot {
+    &__container {
+      grid-template-columns: 0.8fr;
+      justify-content: center;
+    }
+  }
+  .modal {
+    &__title {
+      margin-top: unset;
+      margin-bottom: unset;
+    }
+    &__price {
+      margin-bottom: var(--mb-1);
+    }
+  }
+  .register,
+  .login {
+    &__container {
+      width: 250px;
+    }
+  }
+}
+
+@include minw(576px) {
+  .about {
+    &__container {
+      grid-template-columns: 0.8fr;
+      justify-content: center;
+    }
+  }
+  .newsletter {
+    &__container {
+      display: grid;
+      grid-template-columns: 0.7fr;
+      justify-content: center;
+    }
+    &__description {
+      padding: 0 3rem;
+    }
+  }
+}
+
+@include minw(767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 7rem 0 2rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    &__img,
+    &__close,
+    &__toggle {
+      display: none;
+    }
+    &__list {
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+    &__link {
+      text-transform: initial;
+      font-weight: initial;
+    }
+  }
+  .info,
+  .cart {
+    width: 420px;
+    box-shadow: -2px 0 4px hsla(0, 0%, 15%, 0.1);
+  }
+
+  .home {
+    &__content {
+      padding: 8rem 0 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+    &__image {
+      height: 300px;
+    }
+  }
+  .swiper {
+    &-pagination {
+      margin-top: var(--mb-2);
+    }
+  }
+  .category {
+    &__container {
+      grid-template-columns: repeat(3, 200px);
+      justify-content: center;
+    }
+    &__image {
+      height: 200px;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+    &__title,
+    &__data {
+      text-align: initial;
+    }
+    &__image {
+      width: 350px;
+    }
+  }
+  .hot {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+  .discount {
+    &__container {
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      align-items: center;
+      column-gap: 3rem;
+      padding: 3rem 0;
+      border-radius: 3rem;
+    }
+    &__image {
+      width: 350px;
+      order: -1;
+    }
+    &__data {
+      padding-right: 6rem;
+    }
+  }
+  .newsletter {
+    &__container {
+      grid-template-columns: 0.5fr;
+    }
+  }
+  .new {
+    &__image {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  .footer {
+    &__container {
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      column-gap: 1rem;
+    }
+    &__image {
+      &-two {
+        right: initial;
+        bottom: 0;
+        left: 15%;
+      }
+    }
+  }
+  .modal {
+    width: 100%;
+    height: 100%;
+
+    &__main {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__image {
+      padding: 0 50px;
+      img {
+        height: 300px;
+        transform: translateX(25%);
+      }
+    }
+  }
+  .login,
+  .register {
+    &__container {
+      width: 400px;
+    }
+  }
+  .contact {
+    &__title {
+      font-size: var(--h1-font-size);
+      padding-top: 8rem;
+    }
+    &__city,
+    &__phone,
+    &__info,
+    &__email {
+      font-size: var(--normal-font-size);
+    }
+  }
+  .address {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+    }
+    &__city {
+      padding: var(--mb-1-5);
+    }
+  }
+}
+
+@include minw(992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    &__title {
+      font-size: var(--h1-font-size);
+      margin-bottom: 3rem;
+    }
+  }
+  .home {
+    &__content {
+      padding-top: 9rem;
+      gap: 3rem;
+    }
+    &__group {
+      padding-top: 0;
+    }
+    &__image {
+      height: 400px;
+      transform: translateY(-3rem);
+    }
+    &__indicator {
+      top: initial;
+      right: initial;
+      bottom: 15%;
+      left: 45%;
+      &::after {
+        top: 0;
+        height: 75px;
+      }
+    }
+    &__details {
+      &-img {
+        bottom: 0;
+        right: 58%;
+      }
+    }
+    &__title {
+      margin-bottom: var(--mb-1-5);
+    }
+    &__description {
+      margin-bottom: var(--mb-2-5);
+      padding-right: 2rem;
+    }
+  }
+  .category {
+    &__container {
+      column-gap: 8rem;
+    }
+    &__image {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .about {
+    &__container {
+      column-gap: 7rem;
+    }
+    &__image {
+      width: 450px;
+    }
+    &__description {
+      padding-right: 2rem;
+    }
+  }
+  .hot {
+    &__container {
+      gap: 3.5rem;
+    }
+    &__content {
+      border-radius: 1.5rem;
+    }
+    &__image {
+      width: 110px;
+    }
+    &__title {
+      font-size: var(--h3-font-size);
+    }
+  }
+  .discount {
+    &__container {
+      column-gap: 7rem;
+    }
+  }
+  .new {
+    &__content {
+      width: 310px;
+      border-radius: 1rem;
+      padding: 2rem 0;
+    }
+    &__image {
+      width: 150px;
+      height: 150px;
+    }
+    &__image,
+    &__subtitle {
+      margin-bottom: var(--mb-1);
+    }
+    &__title {
+      font-size: var(--h3-font-size);
+    }
+  }
+  .footer {
+    &__copy {
+      margin-top: 6rem;
+    }
+  }
+  .modal {
+    &__main {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__image {
+      padding: 0 50px;
+      img {
+        height: 300px;
+        transform: unset;
+      }
+    }
+  }
+  .address {
+    &__image {
+      width: 335px;
+    }
+  }
+}
+@include minw(1200px) {
+  .home {
+    &__image {
+      height: 420px;
+    }
+  }
+  .swiper {
+    &-pagination {
+      margin-top: var(--mb-2-5);
+    }
+  }
+  .new {
+    &__image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .footer {
+    &__image {
+      &-one {
+        width: 120px;
+      }
+      &-two {
+        width: 180px;
+        top: 30%;
+        left: -3%;
+      }
+    }
+  }
+  .modal {
+    &__main {
+      grid-template-columns: 1fr 1fr;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__image {
+      padding: 0 50px;
+      img {
+        height: 300px;
+        transform: unset;
+      }
+    }
+  }
+}

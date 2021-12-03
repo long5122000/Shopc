@@ -1,0 +1,15 @@
+.contact {
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    margin-top: var(--mb-2);
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.category__shop {
+  margin-top: 20px;
+  &-list {
+    display: flex;
+    gap: 10px 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  &-item {
+    padding: 15px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+}

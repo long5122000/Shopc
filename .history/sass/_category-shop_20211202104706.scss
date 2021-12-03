@@ -1,0 +1,13 @@
+.category__shop {
+  margin-top: 20px;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
+  &-item {
+    padding: 15px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+}

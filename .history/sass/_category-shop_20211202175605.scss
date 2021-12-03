@@ -1,0 +1,42 @@
+.category__shop {
+  margin-top: 20px;
+  &__menu {
+    margin-bottom: var(--mb-1-5);
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 150px;
+    grid-auto-flow: column;
+    grid-gap: 0.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  &__menu::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  &__menu > * {
+    scroll-snap-align: start;
+  }
+
+  &-item {
+    padding: 15px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+  &__button {
+    padding: 10px 20px;
+  }
+}
+.active {
+  background-color: var(--first-color);
+}
+.hide {
+  display: none;
+}

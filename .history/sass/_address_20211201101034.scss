@@ -1,0 +1,17 @@
+.address {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+    margin-bottom: var(--mb-2);
+  }
+  &__image {
+    border-radius: 8px;
+  }
+  &__city,
+  &__phone,
+  &__info,
+  &__email {
+    text-align: center;
+  }
+}
