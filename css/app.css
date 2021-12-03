@@ -1332,6 +1332,10 @@ input[type=submit]:hover {
 .login__container {
     width: 250px;
   }
+
+  .product__container {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (min-width: 576px) {
   .about__container {

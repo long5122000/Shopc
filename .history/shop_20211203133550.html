@@ -26,10 +26,10 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link active-link">Home</a>
+              <a href="#" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="./shop.html" class="nav__link">Shop</a>
+              <a href="#" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
               <a href="./about.html" class="nav__link">About</a>
@@ -244,54 +244,165 @@
       </div>
     </div>
     <main class="main">
-      <section class="contact container" id="contact">
-        <h1 class="contact__title">Hãy Kết Nối Với Chúng Tôi</h1>
-        <div class="contact__list">
-          <i class="bx bxl-facebook-circle contact__item"></i>
-          <i class="bx bxl-instagram contact__item"></i>
-          <i class="bx bxl-twitter contact__item"></i>
-          <i class="bx bxl-youtube contact__item"></i>
+      <section class="product" id="product">
+        <h1 class="shop__title">Sản phẩm của chúng tôi</h1>
+        <div class="container">
+          <div class="product__header">
+            <div class="search-box">
+              <input type="text" class="search-input" />
+              <button class="search-btn">
+                <i class="bx bx-search-alt-2"></i>
+              </button>
+            </div>
+            <div class="category__shop__menu">
+              <button class="active category__shop__button" type-product="all">
+                Tất cả
+              </button>
+              <button class="category__shop__button" type-product="phones">
+                Điện thoại
+              </button>
+              <button class="category__shop__button" type-product="Tivi">
+                Tivi
+              </button>
+              <button class="category__shop__button" type-product="sound">
+                Âm thanh
+              </button>
+              <button class="category__shop__button" type-product="computer">
+                Máy Tính
+              </button>
+            </div>
+          </div>
+          <div class="product__container grid">
+            <div class="product__content" type-product="sound">
+              <img
+                src="./images/sanphamchay-1.png"
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Tai Nghe Toffee</h3>
+              <span class="product__subtitle">Âm Thanh</span>
+              <span class="product__price">$11.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+
+            <div class="product__content" type-product="sound">
+              <img
+                src="./images/sanphamchay-2.png"
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Tai nghe JBL</h3>
+              <span class="product__subtitle">Âm Thanh</span>
+              <span class="product__price">$8.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+
+            <div class="product__content" type-product="sound">
+              <img
+                src="./images/sanphamchay-3.webp"
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Tai Nghe CBT</h3>
+              <span class="product__subtitle">Âm Thanh</span>
+              <span class="product__price">$15.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+
+            <div class="product__content" type-product="phones">
+              <img
+                src="./images/sanphamchay-4.png"
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Tai Nghe JOCS</h3>
+              <span class="product__subtitle">Âm Thanh</span>
+              <span class="product__price">$7.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+
+            <div class="product__content" type-product="computer">
+              <img
+                src="./images/sanphamchay-5.png"
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Ipad gen 9</h3>
+              <span class="product__subtitle">Tablet</span>
+              <span class="product__price">$19.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+
+            <div class="product__content" type-product="phone">
+              <img
+                src="./images/sanphamchay-6.png "
+                alt=""
+                class="product__image"
+              />
+              <h3 class="product__title">Iphone 13</h3>
+              <span class="product__subtitle">Điện Thoại</span>
+              <span class="product__price">$17.99</span>
+              <button class="button product__button">
+                <i
+                  class="
+                    bx bx-show-alt
+                    product__icon product__icon--bt product__list
+                  "
+                ></i>
+                <i class="bx bx-cart-alt product__icon"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="address container">
-        <div class="address__list">
-          <div class="address__image">
-            <img src="./images/contact-1.jpg" alt="" />
-          </div>
-          <div class="address__content">
-            <div class="address__city">Hà Nội</div>
-            <div class="address__info">
-              <span>Số 121 Cầu Giấy</span>
-              Quận Cầu Giấy, Thành Phố Hà Nội
-            </div>
-            <div class="address__phone">+ SĐT: 08656464335</div>
-            <div class="address__email">+Email: lindf@gmail.com</div>
-          </div>
-        </div>
-        <div class="address__list">
-          <div class="address__image">
-            <img src="./images/contact-2.jpg" alt="" />
-          </div>
-          <div class="address__content">
-            <div class="address__city">Hà Nội</div>
-            <div class="address__info">
-              <span>Số 121 Cầu Giấy</span>
-              Quận Cầu Giấy, Thành Phố Hà Nội
-            </div>
-            <div class="address__phone">+ SĐT: 08656464335</div>
-            <div class="address__email">+Email: lindf@gmail.com</div>
-          </div>
-        </div>
-      </section>
-      <section class="map container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7838.684254869503!2d106.70676642475235!3d10.785086936675276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1547181657956"
-          width="100%"
-          height="450"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen
-        ></iframe>
+      <section class="pagination container">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a href="#!" class="pagination__link"
+              ><i class="bx bx-chevrons-left"></i
+            ></a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer section">
