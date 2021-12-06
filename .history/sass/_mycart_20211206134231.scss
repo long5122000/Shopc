@@ -1,0 +1,9 @@
+.mycart {
+  &__image {
+    width: 150px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,31 @@
+.product__detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  &-content {
+    padding: 10px 15px;
+  }
+  &-category {
+    font-size: var(--h3-font-size);
+    color: var(--h3-color);
+  }
+  &-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &-price {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+  }
+  &-quantity {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.tru,
+.cong {
+  padding: 10px;
+}
+.num {
+  padding: 10px 10px;
+  width: 50px;
+}

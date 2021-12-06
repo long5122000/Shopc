@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopDD</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="./index.html" class="nav__logo">
+          <img src="./images/logo-3.png" alt="" class="nav__logo-img" />
+          ShopDD
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+
+            <!-- <a href="" class="button button--ghost">Support</a> -->
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <!-- <img src="./images/nav-img.png" alt="" class="nav__img" /> -->
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+
+          <div class="nav__shop" id="cart-shop">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+
+          <div class="nav__shop" id="info-user">
+            <i class="bx bx-user"></i>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">My Cart</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-1.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Jazzmaster</h3>
+            <span class="cart__price">$1050</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-3.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Rose Gold</h3>
+            <span class="cart__price">$850</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-5.png" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+        <article class="cart__card">
+          <div class="cart__box">
+            <img src="./images/new-6.webp" alt="" class="cart__img" />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Longines Rose</h3>
+            <span class="cart__price">$980</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 items</span>
+        <span class="cart__prices-total">$2880</span>
+      </div>
+    </div>
+
+    <div class="info" id="info">
+      <i class="bx bx-x info__close" id="info-close"></i>
+      <div class="info__btn">
+        <a href="./login.html" class="button">Đăng nhập</a>
+        <a href="./register.html" class="button">Đăng Ký</a>
+      </div>
+    </div>
+    <main class="main">
+      <section class="home container" id="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="./images/banner_02.png"
+                    alt=""
+                    class="home__image"
+                  />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">
+                      "Công nghệ màn hình mới"
+                    </h4>
+                    <span class="home__details-subtitle"> Supper HDR </span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#1 Top Điện Thoại Bán Chạy</h3>
+                  <h1 class="home__title">
+                    Apple <br />
+                    Iphone 11 <br />Pro Max !!!
+                  </h1>
+                  <p class="home__description">
+                    Trong năm 2019 thì chiếc smartphone được nhiều người mong
+                    muốn sở hữu trên tay và sử dụng nhất không ai khác chính là
+                    iPhone 11 Pro Max 256GB tới từ nhà Apple. Camera được cải
+                    tiến mạnh mẽ Chắc chắn lý do lớn nhất mà bạn muốn nâng cấp
+                    lên iPhone 11 Pro Max chính là cụm camera mới được Apple
+                    nâng cấp rất nhiều.
+                  </p>
+                  <div class="home__buttons">
+                    <a href="#" class="button">Mua Ngay</a>
+                    <!-- <a href="#" class="button--link button--flex">
+                      Track Record
+                      <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img src="./images/cl3.webp" alt="" class="home__image" />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">"Âm thanh vòng"</h4>
+                    <span class="home__details-subtitle"> 360 độ </span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#2 top Âm Thanh</h3>
+                  <h1 class="home__title">
+                    Loa Bluetooth<br />
+                    JBL AUG<br />Supper chart
+                  </h1>
+                  <p class="home__description">
+                    Năm 2019 sẽ là một năm đáng nhớ với những người có niềm đam
+                    mê với các thiết bị nghe nhạc, đặc biệt là loa Bluetooth.
+                    Chúng ta đã thấy rất nhiều những mẫu loa hoàn toàn mới được
+                    ra mắt và đặc biệt hơn cả là nhìn thấy những mẫu loa yêu
+                    thích của mình được nâng cấp và hoàn thiện hơn ở phiên bản
+                    mới.
+                  </p>
+                  <div class="home__buttons">
+                    <a href="#" class="button">Mua Ngay</a>
+                    <!-- <a href="" class="button--link button--flex">
+                      Track Record
+                      <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="./images/collection_02.png"
+                    alt=""
+                    class="home__image"
+                  />
+                  <div class="home__indicator"></div>
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">
+                      "Thiết kế hoàn toàn mới"
+                    </h4>
+                    <span class="home__details-subtitle">
+                      Màu sắc trẻ trung
+                    </span>
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">#3 Top Thời Thượng</h3>
+                  <h1 class="home__title">
+                    Tai Nghe <br />
+                    Beats Solo<br />Pro Max !!!
+                  </h1>
+                  <p class="home__description">
+                    Tai nghe chùm đầu Beats được biết đến với vẻ đẹp hấp dẫn và
+                    thiết kế vô cùng thời thượng. Bên cạnh đó chúng còn sở hữu
+                    âm thanh đáng mơ ước không thể lẫn được vào đâu trong vô số
+                    các thương hiệu tai nghe trên thị trường gần đây. Và tai
+                    nghe Beats Solo Pro chống ồn là một trong những sản phẩm phổ
+                    biến giúp bạn đắm chìm trong thế giới âm nhạc.
+                  </p>
+                  <div class="home__buttons">
+                    <a href="#" class="button">Mua Ngay</a>
+                    <!-- <a href="#" class="button--link button--flex">
+                      Track Record
+                      <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section category">
+        <h2 class="section__title">
+          Thể Loại <br />
+          Được Yêu Thích Nhất
+        </h2>
+        <div class="category__container container grid">
+          <a href="./shop.html" class="category__data">
+            <img src="./images/banner_01.png" alt="" class="category__image" />
+            <h3 class="category__title">Điện Thoại</h3>
+            <p class="category__description">
+              Chọn một chiếc điện thoại mới nhất thôi !!!
+            </p>
+          </a>
+          <a href="./shop.html" class="category__data">
+            <img src="./images/cl3.webp" alt="" class="category__image" />
+            <h3 class="category__title">Âm Thanh</h3>
+            <p class="category__description">
+              Những thiết bị âm thanh tốt nhất.
+            </p>
+          </a>
+          <a href="./shop.html" class="category__data">
+            <img
+              src="./images/favourite-1.png"
+              alt=""
+              class="category__image"
+            />
+            <h3 class="category__title">Laptop, Pc, Màn hình</h3>
+            <p class="category__description">
+              Đáp ứng đầy đủ nhu cầu cần thiết.
+            </p>
+          </a>
+        </div>
+      </section>
+      <section class="section about" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">Về chúng tôi <br /></h2>
+            <p class="about__description">
+              Một đơn vị cung cấp những thiết bị điện tử số một đất nước. Với 25
+              năm kinh nghiệm trong lĩnh vực buôn bán. Chúng tôi hiểu bạn, hiểu
+              nhu cầu của bạn. Từ đó chúng tôi sẽ mang lại những điều tốt nhất
+              cho bạn.
+            </p>
+            <a href="#" class="button">Xem Thêm</a>
+          </div>
+          <img src="./images/about.png" alt="" class="about__image" />
+        </div>
+      </section>
+      <section class="hot section" id="hot">
+        <h2 class="section__title">Sản phẩm bán chạy</h2>
+        <div class="hot__container container grid">
+          <div class="hot__content">
+            <img src="./images/sanphamchay-1.png" alt="" class="hot__image" />
+            <h3 class="hot__title">
+              <a href="./shop.html">Tai Nghe Toffee</a>
+            </h3>
+            <span class="hot__subtitle">Âm Thanh</span>
+            <span class="hot__price">$11.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+
+          <div class="hot__content">
+            <img src="./images/sanphamchay-2.png" alt="" class="hot__image" />
+            <h3 class="hot__title">
+              <a href="./shop.html">Tai Nghe Toffee</a>
+            </h3>
+            <span class="hot__subtitle">Âm Thanh</span>
+            <span class="hot__price">$8.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+
+          <div class="hot__content">
+            <img src="./images/sanphamchay-3.webp" alt="" class="hot__image" />
+            <h3 class="hot__title">
+              <a href="./shop.html">Tai Nghe Toffee</a>
+            </h3>
+            <span class="hot__subtitle">Âm Thanh</span>
+            <span class="hot__price">$15.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+
+          <div class="hot__content">
+            <img src="./images/sanphamchay-4.png" alt="" class="hot__image" />
+            <h3 class="hot__title">
+              <a href="./shop.html">Tai Nghe Toffee</a>
+            </h3>
+            <span class="hot__subtitle">Âm Thanh</span>
+            <span class="hot__price">$7.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+
+          <div class="hot__content">
+            <img src="./images/sanphamchay-5.png" alt="" class="hot__image" />
+            <h3 class="hot__title">Ipad gen 9</h3>
+            <span class="hot__subtitle">Tablet</span>
+            <span class="hot__price">$19.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+
+          <div class="hot__content">
+            <img src="./images/sanphamchay-6.png " alt="" class="hot__image" />
+            <h3 class="hot__title">Iphone 13</h3>
+            <span class="hot__subtitle">Điện Thoại</span>
+            <span class="hot__price">$17.99</span>
+            <button class="button hot__button">
+              <i
+                class="bx bx-show-alt hot__icon hot__icon--bt product__list"
+              ></i>
+              <i class="bx bx-cart-alt hot__icon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section discount">
+        <div class="discount__container container grid">
+          <div class="discount__data">
+            <h2 class="discount__title">Giảm 50%<br />Cho Sản Phẩm Mới</h2>
+            <a href="#" class="button">Xem Thêm</a>
+          </div>
+          <img src="./images/discount.png" alt="" class="discount__image" />
+        </div>
+      </section>
+      <section class="section new" id="new">
+        <h2 class="section__title">Sản Phẩm Mới</h2>
+        <div class="new__container container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-1.png" alt="" class="new__image" />
+                <h3 class="new__title">Tivi SamSung</h3>
+                <span class="new__subtitle">Accsessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$14.99</span>
+                  <span class="new__discount">$29.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-2.png" alt="" class="new__image" />
+                <h3 class="new__title">Tivi LG</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$11.99</span>
+                  <span class="new__discount">$21.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-3.png" alt="" class="new__image" />
+                <h3 class="new__title">Pod</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$4.99</span>
+                  <span class="new__discount">$9.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-4.png" alt="" class="new__image" />
+                <h3 class="new__title">FlyCam</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$24.99</span>
+                  <span class="new__discount">$44.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-5.png" alt="" class="new__image" />
+                <h3 class="new__title">Camera</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$5.99</span>
+                  <span class="new__discount">$12.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-6.webp" alt="" class="new__image" />
+                <h3 class="new__title">Tai Nghe</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$7.99</span>
+                  <span class="new__discount">$14.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-7.webp" alt="" class="new__image" />
+                <h3 class="new__title">Tai Nghe</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$7.99</span>
+                  <span class="new__discount">$14.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+              <div class="new__content swiper-slide">
+                <div class="new__tag">New</div>
+                <img src="./images/new-8.png" alt="" class="new__image" />
+                <h3 class="new__title">Tai Nghe</h3>
+                <span class="new__subtitle">Accessory</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$7.99</span>
+                  <span class="new__discount">$14.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i
+                    class="bx bx-show-alt new__icon new__icon--bt product__list"
+                  ></i>
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section newsletter">
+        <div class="newsletter__container container">
+          <h2 class="section__title">Bản Tin Của Chúng Tôi</h2>
+          <p class="newsletter__description">
+            Đăng ký để nhận những ưu đãi cũng như sản phẩm mới nhất của chúng
+            tôi
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter__input"
+            />
+            <button class="button">Đăng Ký</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="./images/logo-3.png" alt="" class="footer__logo-image" />
+            ShopDD
+          </a>
+          <p class="footer__description">
+            Dịch vụ, sản phẩm tốt nhất dành cho bạn
+          </p>
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Về Chúng Tôi</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Features</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Dịch Vụ</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">Pricing</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Discounts</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Shipping mode</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Công Ty</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">Blog</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">About us</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">Our mision</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; Long Lương. All rigths reserved</span>
+
+      <div class="modal" id="modal__view">
+        <div class="modal__main">
+          <i class="bx bx-x modal__close" id="modal-close"></i>
+          <div class="modal__image">
+            <img src="./images/new-1.png" alt="" />
+          </div>
+          <div class="modal__content">
+            <h3 class="modal__title">Tivi</h3>
+            <p class="modal__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              laborum facilis harum quis aperiam laboriosam quasi deleniti velit
+              est rerum animi consectetur voluptate culpa, quas, dolor illum
+              fugit exercitationem sapiente?
+            </p>
+            <div class="modal__price">$167</div>
+          </div>
+          <a href="#!" class="button modal__button">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <!-- <img src="./images/footer1-img.png" alt="" class="footer__image-one" />
+      <img src="./images/footer2-img.png" alt="" class="footer__image-two" /> -->
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/scrollreveal.min.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

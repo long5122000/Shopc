@@ -1,0 +1,17 @@
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  &__item {
+    background-color: transparent;
+  }
+  &__link {
+    padding: 10px 10px;
+    color: var(--text-color);
+  }
+}
+.active-link {
+  background-color: var(--text-color);
+}
