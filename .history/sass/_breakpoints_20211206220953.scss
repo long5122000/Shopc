@@ -272,9 +272,6 @@
       grid-template-columns: 1fr 1fr;
     }
   }
-  .success {
-    padding-top: 6.5rem;
-  }
 }
 
 @include minw(992px) {

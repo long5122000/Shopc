@@ -267,13 +267,10 @@
     }
   }
   .check {
-    padding-top: 6.5rem;
+    padding: 6.5rem;
     &__container {
       grid-template-columns: 1fr 1fr;
     }
-  }
-  .success {
-    padding-top: 6.5rem;
   }
 }
 
