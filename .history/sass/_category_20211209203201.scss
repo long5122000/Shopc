@@ -1,8 +1,8 @@
 .category {
+  margin-top: var(--mb-1);
   &__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 2rem;
-    margin-top: var(--mb-1);
   }
   &__description {
     color: var(--text-color);
@@ -12,7 +12,6 @@
   }
   &__image {
     width: 120px;
-    height: 150px;
     margin: 0 auto;
     transition: 0.3s;
   }

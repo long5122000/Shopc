@@ -13,7 +13,14 @@ if(navClose){
     })
 }
 
+/* Remove menu mobile */
+const navLink = document.querySelectorAll('.nav__link')
 
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click', linkAction))
 
 /*swiper */
 
@@ -136,11 +143,13 @@ console.log(descList)
 descBtns.forEach((btnc) => {
 	btnc.addEventListener('click', (e) => {
 		const type = e.target.getAttribute('type-desc')
+
 		// remove and set active fpr button
 		document
 			.querySelector('.product__desc__menu button.active ')
 			.classList.remove('active')
 		e.target.classList.add('active')
+        
 
 		// filter elements
 		descList.forEach((itemc) => {
